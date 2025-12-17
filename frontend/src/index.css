@@ -1,0 +1,273 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Base ===== */
+body {
+  background-image: url('/img/white-tiger.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #000;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.6;
+  color: #212529;
+}
+
+.App {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-brand img {
+  height: 38px;
+}
+
+.nav-search {
+  flex: 1;
+  max-width: 420px;
+  margin: 0 2rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #f1f3f5;
+  font-size: 0.95rem;
+}
+
+.search-input:focus {
+  outline: none;
+  background: white;
+}
+
+.nav-actions .btn-create {
+  background: #2f9e44;
+  color: white;
+  padding: 0.45rem 1.1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-actions .btn-create:hover {
+  background: #2b8a3e;
+}
+
+/* ===== Rutina Card ===== */
+.rutina-card {
+  background: white;
+  border-radius: 14px;
+  padding: 1.4rem 1.6rem;
+  margin-bottom: 1.4rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.rutina-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1c7ed6;
+  text-decoration: none;
+  display: block;
+}
+
+.rutina-description {
+  color: #495057;
+  margin-top: 0.4rem;
+}
+
+.rutina-actions {
+  margin-top: 1.1rem;
+  display: flex;
+  gap: 0.6rem;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.btn-edit {
+  background: #228be6;
+  color: white;
+}
+
+.btn-delete {
+  background: #e03131;
+  color: white;
+}
+
+.btn-primary {
+  background: #2f9e44;
+  color: white;
+}
+
+.btn-secondary {
+  background: #868e96;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* ===== Forms ===== */
+.form-container {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  color: #343a40;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.55rem;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  font-size: 0.95rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #228be6;
+}
+
+/* ===== Ejercicios (Editar) ===== */
+.ejercicio-form {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e9ecef;
+}
+
+.ejercicio-form .btn-delete {
+  margin-bottom: 0.6rem;
+  font-size: 0.8rem;
+}
+
+/* ===== Detalle Rutina ===== */
+.detalle-rutina {
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 18px;
+  padding: 2.3rem;
+  margin-top: 2rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.detalle-rutina h1 {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+  color: #1c7ed6;
+}
+
+.detalle-rutina p {
+  margin-bottom: 1.4rem;
+  color: #495057;
+}
+
+/* ===== Días ===== */
+.dia-seccion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.dia-card {
+  background: #f1f3f5;
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+  border-left: 5px solid #228be6;
+}
+
+.dia-card h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.25rem;
+  color: #343a40;
+}
+
+/* ===== Ejercicios (Detalle) ===== */
+.ejercicios-dia {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.ejercicio-card {
+  background: white;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Utils ===== */
+.loading,
+.error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+.error {
+  color: #e03131;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-search {
+    margin: 0;
+    width: 100%;
+  }
+
+  .detalle-rutina,
+  .form-container {
+    padding: 1.5rem;
+  }
+}
