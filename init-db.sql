@@ -1,0 +1,3 @@
+-- init-db.sql
+-- La base de datos ya se crea con POSTGRES_DB
+-- Este archivo se ejecuta automáticamente al iniciar PostgreSQL

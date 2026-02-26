@@ -49,6 +49,19 @@ frontend/
 └── .env               # Configuración de la URL del backend
 ```
 
+## Ejecución con Docker 
+
+1. Asegúrese de tener Docker y Docker Compose instalados.
+
+2. En la raíz del proyecto, ejecute:
+
+```
+docker-compose up --build
+```
+
+3. Acceda a:
+Frontend: http://localhost:5173
+Backend (Swagger): http://localhost:8000/docs
 
 ## Autor
 
